@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="clic()">poga</button>
+    <p id="klic">0</p>
+    
+
+<form action="handle-click.php" method="POST">
+    <input type="text" id="input">
+    <button>Saglabat</button>
+</form>
+
+    <script>
+    let a=0;
+    function clic(){
+        a=a+1;
+      document.getElementById("klic").textContent = a;//inerHTML vietaa textContent drosibas del
+      document.getElementById("input").value = a;
+    }
+    
+</script>
+
+
+</body>
+</html>
